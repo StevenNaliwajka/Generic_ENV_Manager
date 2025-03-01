@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "generic_env_manager"
+version = "0.1"
+description = "A simple ENV creator and manager for Python projects"
+authors = [{name = "Steven Naliwajka", email = "Steven716@live.com"}]
+dependencies = []
+requires-python = ">=3.6"
+
+[tool.setuptools]
+packages = ["generic_env_manager"]
