@@ -4,6 +4,17 @@ from typing import Optional
 
 
 class ENVUtil:
+    """
+    example:
+    data = {
+        "API_KEY": "12345#secure",
+        "PASSWORD": "my=secure=password",
+        "MULTILINE_VAR": "line1\nline2\nline3",
+        "DEBUG_MODE": True,
+        "PORT": 8080
+    }
+    ENVUtil.create_env(path_to_file, data)
+    """
 
     @staticmethod
     def create_env(file_path: str, data: dict, overwrite: bool = False) -> None:
